@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "arcadis-dashboard"
+  "cli": {
+    "analytics": false
+  }
 }
