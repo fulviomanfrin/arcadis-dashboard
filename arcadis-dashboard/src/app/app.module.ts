@@ -13,11 +13,16 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {MatTableModule} from "@angular/material/table";
 import {GridColsDirective} from "./shared/directives/grid-cols-directive";
+import {NgPrimeDashboardComponent} from "./modules/main/dashboard/ng-prime-dashboard/ng-prime-dashboard.component";
+import {MenuModule} from "primeng/menu";
+import {MenubarModule} from "primeng/menubar";
+import {MainModule} from "./modules/main/main.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
+    NgPrimeDashboardComponent,
     GridColsDirective
   ],
   imports: [
@@ -30,7 +35,10 @@ import {GridColsDirective} from "./shared/directives/grid-cols-directive";
     MatCardModule,
     MatDividerModule,
     MatProgressBarModule,
-    MatTableModule
+    MatTableModule,
+    MenuModule,
+    MenubarModule,
+    MainModule
   ],
   providers: [],
   bootstrap: [AppComponent]
